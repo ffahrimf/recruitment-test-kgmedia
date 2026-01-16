@@ -1,0 +1,128 @@
+:root {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#banner {
+  width: 160px;
+  height: 600px;
+  position: relative;
+  background-color: white;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  border: gainsboro solid 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: green;
+}
+
+#wrapper {
+  width: 160px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+#logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-wrapper {
+  margin-top: -20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkgreen;
+  padding: 5px 0px;
+}
+
+#hero {
+  background-color: aqua;
+  width: max-content;
+}
+
+#content {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#stars-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+#stars-wrapper img {
+  width: 20px;
+  height: auto;
+}
+
+#mini-title {
+  text-align: center;
+  margin: 0;
+  font-weight: 700;
+  width: 100%;
+  white-space: nowrap;
+  transform: scaleY(1.5);
+  display: block;
+  line-height: 1.2;
+  font-size: 13px;
+  transform-origin: center;
+  margin-top: 15px;
+}
+
+#title {
+  margin-top: 5px;
+  margin: 0;
+  font-size: 35px;
+  width: fit-content;
+  line-height: 0.9;
+  display: flex;
+  font-weight: 700;
+  text-align: center;
+  transform: scaleX(0.7);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+#desc {
+  padding: 0px 10px;
+  text-align: justify;
+  margin: 0;
+  color: darkgreen;
+  font-size: 12px;
+}
+
+#cta {
+  display: flex;
+  justify-content: center;
+}
+
+#button {
+  outline: none;
+  border: none;
+  appearance: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-weight: 700;
+  transform: scaleY(1.5) scaleX(0.9);
+  background-color: darkgreen;
+  color: white;
+}
+
+#footer {
+  text-align: center;
+  font-size: 12px;
+  color: darkgreen;
+  font-weight: 600;
+  margin: 0;
+}

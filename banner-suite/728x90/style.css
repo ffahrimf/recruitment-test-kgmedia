@@ -1,0 +1,90 @@
+:root {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#banner {
+  border: gainsboro solid 1px;
+  width: 728px;
+  height: 90px;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative;
+  overflow: hidden;
+  background-image: linear-gradient(
+    to right,
+    rgb(225, 225, 225) 0%,
+    white 50%,
+    rgb(225, 225, 225) 100%
+  );
+  display: flex;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+#logo-wrapper {
+  border-right: 2px solid #ccc;
+  padding-right: 20px;
+  width: 150px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  width: 100%;
+}
+
+#content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#title {
+  color: #000080;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0;
+}
+
+#subtitle {
+  margin: 0;
+  font-weight: 500;
+  font-size: 12px;
+  color: slategray;
+}
+
+#cta {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+}
+
+#smartphone {
+  width: 60px;
+  height: 60px;
+}
+
+#button {
+  display: flex;
+  background-color: #ff6347;
+  color: white;
+  padding: 7px 18px;
+  border-radius: 15px;
+  font-size: 13px;
+  cursor: pointer;
+
+  outline: none;
+  border: none;
+  appearance: none;
+}
