@@ -1,0 +1,791 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="ad.size" content="width=300,height=250" />
+
+    <link rel="icon" type="image/x-icon" href="./public/icon/spotify.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="preload"
+      as="image"
+      href="./public/before.avif"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="./public/after.avif"
+      fetchpriority="high"
+    />
+
+    <title>Interactive Banner</title>
+    <script type="text/javascript">
+      var clickTag = "https://www.spotify.com/id-id/premium";
+    </script>
+
+    <style>
+      *,
+      :after,
+      :before {
+        --tw-border-spacing-x: 0;
+        --tw-border-spacing-y: 0;
+        --tw-translate-x: 0;
+        --tw-translate-y: 0;
+        --tw-rotate: 0;
+        --tw-skew-x: 0;
+        --tw-skew-y: 0;
+        --tw-scale-x: 1;
+        --tw-scale-y: 1;
+        --tw-pan-x: ;
+        --tw-pan-y: ;
+        --tw-pinch-zoom: ;
+        --tw-scroll-snap-strictness: proximity;
+        --tw-gradient-from-position: ;
+        --tw-gradient-via-position: ;
+        --tw-gradient-to-position: ;
+        --tw-ordinal: ;
+        --tw-slashed-zero: ;
+        --tw-numeric-figure: ;
+        --tw-numeric-spacing: ;
+        --tw-numeric-fraction: ;
+        --tw-ring-inset: ;
+        --tw-ring-offset-width: 0px;
+        --tw-ring-offset-color: #fff;
+        --tw-ring-color: rgba(59, 130, 246, 0.5);
+        --tw-ring-offset-shadow: 0 0 #0000;
+        --tw-ring-shadow: 0 0 #0000;
+        --tw-shadow: 0 0 #0000;
+        --tw-shadow-colored: 0 0 #0000;
+        --tw-blur: ;
+        --tw-brightness: ;
+        --tw-contrast: ;
+        --tw-grayscale: ;
+        --tw-hue-rotate: ;
+        --tw-invert: ;
+        --tw-saturate: ;
+        --tw-sepia: ;
+        --tw-drop-shadow: ;
+        --tw-backdrop-blur: ;
+        --tw-backdrop-brightness: ;
+        --tw-backdrop-contrast: ;
+        --tw-backdrop-grayscale: ;
+        --tw-backdrop-hue-rotate: ;
+        --tw-backdrop-invert: ;
+        --tw-backdrop-opacity: ;
+        --tw-backdrop-saturate: ;
+        --tw-backdrop-sepia: ;
+        --tw-contain-size: ;
+        --tw-contain-layout: ;
+        --tw-contain-paint: ;
+        --tw-contain-style: ;
+      }
+      ::backdrop {
+        --tw-border-spacing-x: 0;
+        --tw-border-spacing-y: 0;
+        --tw-translate-x: 0;
+        --tw-translate-y: 0;
+        --tw-rotate: 0;
+        --tw-skew-x: 0;
+        --tw-skew-y: 0;
+        --tw-scale-x: 1;
+        --tw-scale-y: 1;
+        --tw-pan-x: ;
+        --tw-pan-y: ;
+        --tw-pinch-zoom: ;
+        --tw-scroll-snap-strictness: proximity;
+        --tw-gradient-from-position: ;
+        --tw-gradient-via-position: ;
+        --tw-gradient-to-position: ;
+        --tw-ordinal: ;
+        --tw-slashed-zero: ;
+        --tw-numeric-figure: ;
+        --tw-numeric-spacing: ;
+        --tw-numeric-fraction: ;
+        --tw-ring-inset: ;
+        --tw-ring-offset-width: 0px;
+        --tw-ring-offset-color: #fff;
+        --tw-ring-color: rgba(59, 130, 246, 0.5);
+        --tw-ring-offset-shadow: 0 0 #0000;
+        --tw-ring-shadow: 0 0 #0000;
+        --tw-shadow: 0 0 #0000;
+        --tw-shadow-colored: 0 0 #0000;
+        --tw-blur: ;
+        --tw-brightness: ;
+        --tw-contrast: ;
+        --tw-grayscale: ;
+        --tw-hue-rotate: ;
+        --tw-invert: ;
+        --tw-saturate: ;
+        --tw-sepia: ;
+        --tw-drop-shadow: ;
+        --tw-backdrop-blur: ;
+        --tw-backdrop-brightness: ;
+        --tw-backdrop-contrast: ;
+        --tw-backdrop-grayscale: ;
+        --tw-backdrop-hue-rotate: ;
+        --tw-backdrop-invert: ;
+        --tw-backdrop-opacity: ;
+        --tw-backdrop-saturate: ;
+        --tw-backdrop-sepia: ;
+        --tw-contain-size: ;
+        --tw-contain-layout: ;
+        --tw-contain-paint: ;
+        --tw-contain-style: ;
+      } /*! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com*/
+      *,
+      :after,
+      :before {
+        box-sizing: border-box;
+        border: 0 solid #e5e7eb;
+      }
+      :after,
+      :before {
+        --tw-content: "";
+      }
+      :host,
+      html {
+        line-height: 1.5;
+        -webkit-text-size-adjust: 100%;
+        -moz-tab-size: 4;
+        -o-tab-size: 4;
+        tab-size: 4;
+        font-family:
+          ui-sans-serif,
+          system-ui,
+          sans-serif,
+          Apple Color Emoji,
+          Segoe UI Emoji,
+          Segoe UI Symbol,
+          Noto Color Emoji;
+        font-feature-settings: normal;
+        font-variation-settings: normal;
+        -webkit-tap-highlight-color: transparent;
+      }
+      body {
+        margin: 0;
+        line-height: inherit;
+      }
+      hr {
+        height: 0;
+        color: inherit;
+        border-top-width: 1px;
+      }
+      abbr:where([title]) {
+        -webkit-text-decoration: underline dotted;
+        text-decoration: underline dotted;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-size: inherit;
+        font-weight: inherit;
+      }
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      b,
+      strong {
+        font-weight: bolder;
+      }
+      code,
+      kbd,
+      pre,
+      samp {
+        font-family:
+          ui-monospace,
+          SFMono-Regular,
+          Menlo,
+          Monaco,
+          Consolas,
+          Liberation Mono,
+          Courier New,
+          monospace;
+        font-feature-settings: normal;
+        font-variation-settings: normal;
+        font-size: 1em;
+      }
+      small {
+        font-size: 80%;
+      }
+      sub,
+      sup {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+      }
+      sub {
+        bottom: -0.25em;
+      }
+      sup {
+        top: -0.5em;
+      }
+      table {
+        text-indent: 0;
+        border-color: inherit;
+        border-collapse: collapse;
+      }
+      button,
+      input,
+      optgroup,
+      select,
+      textarea {
+        font-family: inherit;
+        font-feature-settings: inherit;
+        font-variation-settings: inherit;
+        font-size: 100%;
+        font-weight: inherit;
+        line-height: inherit;
+        letter-spacing: inherit;
+        color: inherit;
+        margin: 0;
+        padding: 0;
+      }
+      button,
+      select {
+        text-transform: none;
+      }
+      button,
+      input:where([type="button"]),
+      input:where([type="reset"]),
+      input:where([type="submit"]) {
+        -webkit-appearance: button;
+        background-color: transparent;
+        background-image: none;
+      }
+      :-moz-focusring {
+        outline: auto;
+      }
+      :-moz-ui-invalid {
+        box-shadow: none;
+      }
+      progress {
+        vertical-align: baseline;
+      }
+      ::-webkit-inner-spin-button,
+      ::-webkit-outer-spin-button {
+        height: auto;
+      }
+      [type="search"] {
+        -webkit-appearance: textfield;
+        outline-offset: -2px;
+      }
+      ::-webkit-search-decoration {
+        -webkit-appearance: none;
+      }
+      ::-webkit-file-upload-button {
+        -webkit-appearance: button;
+        font: inherit;
+      }
+      summary {
+        display: list-item;
+      }
+      blockquote,
+      dd,
+      dl,
+      figure,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      hr,
+      p,
+      pre {
+        margin: 0;
+      }
+      fieldset {
+        margin: 0;
+      }
+      fieldset,
+      legend {
+        padding: 0;
+      }
+      menu,
+      ol,
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      dialog {
+        padding: 0;
+      }
+      textarea {
+        resize: vertical;
+      }
+      input::-moz-placeholder,
+      textarea::-moz-placeholder {
+        opacity: 1;
+        color: #9ca3af;
+      }
+      input::placeholder,
+      textarea::placeholder {
+        opacity: 1;
+        color: #9ca3af;
+      }
+      [role="button"],
+      button {
+        cursor: pointer;
+      }
+      :disabled {
+        cursor: default;
+      }
+      audio,
+      canvas,
+      embed,
+      iframe,
+      img,
+      object,
+      svg,
+      video {
+        display: block;
+        vertical-align: middle;
+      }
+      img,
+      video {
+        max-width: 100%;
+        height: auto;
+      }
+      [hidden]:where(:not([hidden="until-found"])) {
+        display: none;
+      }
+      .pointer-events-none {
+        pointer-events: none;
+      }
+      .absolute {
+        position: absolute;
+      }
+      .relative {
+        position: relative;
+      }
+      .bottom-4 {
+        bottom: 1rem;
+      }
+      .left-0 {
+        left: 0;
+      }
+      .left-1\/2 {
+        left: 50%;
+      }
+      .left-5 {
+        left: 1.25rem;
+      }
+      .right-4 {
+        right: 1rem;
+      }
+      .right-5 {
+        right: 1.25rem;
+      }
+      .top-0 {
+        top: 0;
+      }
+      .top-1\/2 {
+        top: 50%;
+      }
+      .top-4 {
+        top: 1rem;
+      }
+      .top-5 {
+        top: 1.25rem;
+      }
+      .top-\[60\%\] {
+        top: 60%;
+      }
+      .z-0 {
+        z-index: 0;
+      }
+      .z-10 {
+        z-index: 10;
+      }
+      .z-20 {
+        z-index: 20;
+      }
+      .z-30 {
+        z-index: 30;
+      }
+      .z-40 {
+        z-index: 40;
+      }
+      .flex {
+        display: flex;
+      }
+      .size-2 {
+        width: 0.5rem;
+        height: 0.5rem;
+      }
+      .size-4 {
+        width: 1rem;
+        height: 1rem;
+      }
+      .h-3 {
+        height: 0.75rem;
+      }
+      .h-\[250px\] {
+        height: 250px;
+      }
+      .h-full {
+        height: 100%;
+      }
+      .min-h-screen {
+        min-height: 100vh;
+      }
+      .w-1\/2 {
+        width: 50%;
+      }
+      .w-2 {
+        width: 0.5rem;
+      }
+      .w-3 {
+        width: 0.75rem;
+      }
+      .w-\[18px\] {
+        width: 18px;
+      }
+      .w-\[300px\] {
+        width: 300px;
+      }
+      .w-full {
+        width: 100%;
+      }
+      .min-w-\[300px\] {
+        min-width: 300px;
+      }
+      .origin-center {
+        transform-origin: center;
+      }
+      .-translate-x-1\/2 {
+        --tw-translate-x: -50%;
+      }
+      .-translate-x-1\/2,
+      .-translate-y-1\/2 {
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+          rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
+          skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+          scaleY(var(--tw-scale-y));
+      }
+      .-translate-y-1\/2 {
+        --tw-translate-y: -50%;
+      }
+      .rotate-90 {
+        --tw-rotate: 90deg;
+      }
+      .rotate-90,
+      .scale-125 {
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+          rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
+          skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+          scaleY(var(--tw-scale-y));
+      }
+      .scale-125 {
+        --tw-scale-x: 1.25;
+        --tw-scale-y: 1.25;
+      }
+      .flex-col {
+        flex-direction: column;
+      }
+      .items-center {
+        align-items: center;
+      }
+      .justify-center {
+        justify-content: center;
+      }
+      .justify-between {
+        justify-content: space-between;
+      }
+      .gap-0\.5 {
+        gap: 0.125rem;
+      }
+      .overflow-hidden {
+        overflow: hidden;
+      }
+      .text-nowrap {
+        text-wrap: nowrap;
+      }
+      .rounded-full {
+        border-radius: 9999px;
+      }
+      .rounded-sm {
+        border-radius: 0.125rem;
+      }
+      .rounded-xl {
+        border-radius: 0.75rem;
+      }
+      .border {
+        border-width: 1px;
+      }
+      .border-white\/30 {
+        border-color: hsla(0, 0%, 100%, 0.3);
+      }
+      .bg-black\/50 {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      .bg-transparent {
+        background-color: transparent;
+      }
+      .bg-white {
+        --tw-bg-opacity: 1;
+        background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+      }
+      .bg-white\/30 {
+        background-color: hsla(0, 0%, 100%, 0.3);
+      }
+      .object-cover {
+        -o-object-fit: cover;
+        object-fit: cover;
+      }
+      .px-3\.5 {
+        padding-left: 0.875rem;
+        padding-right: 0.875rem;
+      }
+      .py-1 {
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+      }
+      .font-sans {
+        font-family:
+          ui-sans-serif,
+          system-ui,
+          sans-serif,
+          Apple Color Emoji,
+          Segoe UI Emoji,
+          Segoe UI Symbol,
+          Noto Color Emoji;
+      }
+      .text-\[8px\] {
+        font-size: 8px;
+      }
+      .text-\[9px\] {
+        font-size: 9px;
+      }
+      .text-xs {
+        font-size: 0.75rem;
+        line-height: 1rem;
+      }
+      .font-bold {
+        font-weight: 700;
+      }
+      .font-semibold {
+        font-weight: 600;
+      }
+      .leading-snug {
+        line-height: 1.375;
+      }
+      .tracking-tighter {
+        letter-spacing: -0.05em;
+      }
+      .text-gray-400 {
+        --tw-text-opacity: 1;
+        color: rgb(156 163 175 / var(--tw-text-opacity, 1));
+      }
+      .text-primary {
+        --tw-text-opacity: 1;
+        color: rgb(30 215 96 / var(--tw-text-opacity, 1));
+      }
+      .text-white {
+        --tw-text-opacity: 1;
+        color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+      }
+      .antialiased {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      .shadow-2xl {
+        --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+        box-shadow:
+          var(--tw-ring-offset-shadow, 0 0 #0000),
+          var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+      }
+      .outline-none {
+        outline: 2px solid transparent;
+        outline-offset: 2px;
+      }
+      .transition {
+        transition-property:
+          color, background-color, border-color, text-decoration-color, fill,
+          stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 0.15s;
+      }
+      .transition-all {
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 0.15s;
+      }
+      .duration-300 {
+        transition-duration: 0.3s;
+      }
+      .duration-500 {
+        transition-duration: 0.5s;
+      }
+      .duration-700 {
+        transition-duration: 0.7s;
+      }
+      .ease-in-out {
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .ease-out {
+        transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+      }
+      .hover\:scale-\[102\%\]:hover {
+        --tw-scale-x: 102%;
+        --tw-scale-y: 102%;
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+          rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
+          skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+          scaleY(var(--tw-scale-y));
+      }
+      .hover\:bg-black:hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+      }
+      .active\:scale-95:active {
+        --tw-scale-x: 0.95;
+        --tw-scale-y: 0.95;
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+          rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
+          skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+          scaleY(var(--tw-scale-y));
+      }
+    </style>
+  </head>
+
+  <body class="antialiased flex justify-center items-center min-h-screen">
+    <div id="banner" class="w-[300px] h-[250px] rounded-xl overflow-hidden">
+      <div class="relative w-full rounded-xl h-full">
+        <img
+          src="./public/after.avif"
+          id="after-image"
+          fetchpriority="high"
+          class="absolute top-0 left-0 z-0 w-full h-full object-cover scale-125 origin-center"
+          alt="After"
+        />
+        <div class="absolute z-0 flex items-center right-5 top-5 gap-0.5">
+          <img
+            alt="Spotify Logo"
+            width="12"
+            height="12"
+            src="./public/icon/spotify.svg"
+          />
+          <p
+            class="text-[8px] bottom-4 text-nowrap text-primary font-semibold tracking-tighter"
+          >
+            Premium
+          </p>
+        </div>
+        <p
+          class="absolute left-5 z-20 text-xs top-[60%] text-nowrap text-primary font-semibold tracking-tighter leading-snug"
+        >
+          Bebas dengerin <br />
+          lagu sepuasnya tanpa <br />
+          jeda iklan.
+        </p>
+        <button
+          onclick="window.open(window.clickTag)"
+          class="absolute active:scale-95 hover:scale-[102%] transition duration-300 ease-in-out z-40 bottom-4 right-4 px-3.5 py-1 rounded-full bg-transparent border border-white/30 outline-none hover:bg-black text-white font-sans font-bold text-[9px]"
+        >
+          Dapatkan Premium
+        </button>
+        <div
+          id="before-overlay"
+          class="absolute top-0 left-0 w-1/2 h-full overflow-hidden z-20 transition-all duration-700 ease-out"
+        >
+          <img
+            src="./public/before.avif"
+            id="before-image"
+            fetchpriority="high"
+            class="absolute top-0 left-0 z-10 h-full min-w-[300px] object-cover scale-125 origin-center"
+            alt="Before"
+          />
+          <div class="absolute z-20 flex items-center left-5 top-5 gap-0.5">
+            <img
+              alt="Spotify Logo"
+              width="12"
+              height="12"
+              src="./public/icon/spotify-white.svg"
+            />
+            <p
+              class="text-[8px] bottom-4 text-nowrap text-white font-semibold tracking-tighter"
+            >
+              Free
+            </p>
+          </div>
+          <p
+            class="absolute left-5 z-20 text-xs bottom-4 text-nowrap text-white font-semibold tracking-tighter leading-snug"
+          >
+            Lagi asik denger lagu, <br />
+            malah kepotong iklan.
+          </p>
+        </div>
+        <div
+          id="slider"
+          class="absolute z-30 left-1/2 -translate-x-1/2 top-4 bottom-4 w-[18px] rounded-full bg-white/30 border border-white/30 transition-all duration-500 ease-out"
+        >
+          <div
+            class="relative w-full flex flex-col justify-between items-center h-full"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="size-4 text-white"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M9.47 6.47a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 1 1-1.06 1.06L10 8.06l-3.72 3.72a.75.75 0 0 1-1.06-1.06l4.25-4.25Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+
+            <div
+              class="bg-black/50 w-2 rounded-full border border-white/30 h-full"
+            ></div>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="size-4 text-white"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div
+            id="volume"
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-all pointer-events-none z-40"
+          >
+            <div
+              class="w-3 h-3 rounded-sm bg-white shadow-2xl border flex justify-center items-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                class="size-2 rotate-90 text-gray-400"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2 3.75A.75.75 0 0 1 2.75 3h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 3.75ZM2 8a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 8Zm0 4.25a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./script.js" defer></script>
+  </body>
+</html>
